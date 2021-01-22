@@ -1,0 +1,19 @@
+{
+  "name": "my_testtask",
+  "version": "1.0.0",
+  "description": "this is the test application for iconstorm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreativeCoder28/my_TestTask.git"
+  },
+  "author": "Sakshi Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CreativeCoder28/my_TestTask/issues"
+  },
+  "homepage": "https://github.com/CreativeCoder28/my_TestTask#readme"
+}
