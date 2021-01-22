@@ -4,7 +4,7 @@
   "description": "this is the test application for iconstorm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CreativeCoder28/my_TestTask/issues"
   },
-  "homepage": "https://github.com/CreativeCoder28/my_TestTask#readme"
+  "homepage": "https://github.com/CreativeCoder28/my_TestTask#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
