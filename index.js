@@ -1,25 +1,41 @@
 const express = require('express');
 const path = require('path');
+const PORT= 3000;
+
+
+const router = express.Router();
 
 //Init App
 const app =express();
 
-// Load view Engine
-app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Load view Pug Engine
 app.set('view engine', 'pug');
+app.use(express.static(path.join(__dirname, 'public')))
+
 
 // Home Route
-app.get('/', function(req, res){
+app.get('', function(req, res){
    res.render('home');
+   title: 'Home'
 });
 
-// Dasboard Route
-app.get('/', function(req, res){
-  res.render('dashboard');
-  title: 'Dashboard'
+// About us Route
+app.get('/about-us', function(req, res){
+  res.render('about-us');
+  title: 'About Us'
 });
 
 
-app.listen(3000, function(){
-  console.log('port is 3000');
+// Contact us Route
+app.get('/contact-us', function(req, res){
+  res.render('contact-us');
+  title: 'Contact Us'
+});
+
+
+
+app.listen(PORT, function(){
+  console.log("Server Started on http://localhost:3000");
 })

@@ -1,0 +1,183 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+
+
+:root {
+  font-size: 15px;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: black;
+  --bg-primary: rgb(8, 86, 175);
+  --bg-secondary: white;
+  --highlight-background: rgba(212, 211, 211, 0.8);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--bg-primary);
+  border-radius: 0.2rem;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px -10px;
+  color: var(--prime-color);
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: var(--bg-primary);
+}
+
+main {
+  margin: 5rem;
+  min-height: 550px;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  color: var(--text-primary);
+}
+
+label.logo {
+  color: var(--text-primary);
+  font-size: 35px;
+  padding: 0 30px;
+}
+
+nav ul a {
+  margin: 0 10px;
+  color: var(--text-primary);
+}
+
+a.active,
+a.hover {
+  background: #bbbcbd;
+  transition: .5s;
+  color: orange;
+}
+
+.page-wrapper.toggled .sidebar-wrapper {
+  left: 0px;
+  margin-top: 5rem;
+}
+
+
+.panel {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+  border-radius: 15px !important;
+  position: relative;
+  margin: 20px;
+}
+
+.panel-close {
+  transform: scale3d(0, 0, 0);
+}
+
+.panel-body {
+  position: relative;
+  padding: 20px;
+}
+
+.panel-heading {
+  background: var(--highlight-background) !important;
+  border-radius: 0;
+  padding: 15px;
+  border-bottom: 0 !important;
+}
+
+.panel-heading .panel-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 20px;
+}
+
+/*......Side bar style*/
+.sidebar {
+  width: 5rem;
+  height: 100vh;
+}
+
+.sidebar-navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/*.... footer styles..*/
+
+.main-footer {
+  justify-content: center;
+  background: var(--highlight-background);
+  display: flex;
+  position: relative;
+  padding: 10px 0;
+}
+
+.main-footer .row {
+  justify-content: center;
+}
+
+.main-footer>input .search {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.footer-panel {
+  flex-grow: 1;
+  height: 30px;
+  background-color: var(--bg-primary);
+  display: flex;
+  position: relative;
+  color: var(--text-primary);
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.social {
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.social i {
+  margin: 15px;
+}

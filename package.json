@@ -4,8 +4,9 @@
   "description": "this is the test application for iconstorm",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    
+    "start": "nodemon index",
+    "dev": "parcel views/layout.pug",
+    "build": "parcel views/layout.pug>"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,12 @@
   },
   "homepage": "https://github.com/CreativeCoder28/my_TestTask#readme",
   "dependencies": {
+    "core-js": "^3.8.3",
     "express": "^4.17.1",
-    "parcel-bundler": "^1.3.1",
     "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.4"
   }
 }
