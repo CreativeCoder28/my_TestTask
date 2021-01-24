@@ -64,7 +64,7 @@ h6 {
 
 main {
   margin: 5rem;
-  min-height: 550px;
+  min-height: calc(100vh - 100px - 100px);
 }
 
 nav {
@@ -126,7 +126,8 @@ a.hover {
   margin: 0 20px;
 }
 
-/*......Side bar style*/
+/*Side bar style
+------------------------------------------------------*/
 .sidebar {
   width: 5rem;
   height: 100vh;
@@ -142,7 +143,8 @@ a.hover {
 
 }
 
-/*.... footer styles..*/
+/*footer styles
+---------------------------------------------.*/
 
 .main-footer {
   justify-content: center;

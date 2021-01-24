@@ -1,3 +1,5 @@
+include components/carousel
+
 doctype html
 html(lang="en")
   head    
@@ -14,6 +16,7 @@ html(lang="en")
     script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6")
     
+   
   body
     block header
       include components/header  
@@ -23,8 +26,7 @@ html(lang="en")
         block  sidebar
           p nothing has been added yet
       col-sm-6 
-        block primary        
+        block primary  
     
     block footer
       include components/footer
-    

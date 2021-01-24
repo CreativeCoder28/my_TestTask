@@ -1,4 +1,3 @@
-
 $(".carousel").swipe({
 
   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
