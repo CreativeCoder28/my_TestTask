@@ -13,4 +13,9 @@ npm-debug.log*
 .cache
 .parcel-cache
 
+# Module dependencies
+node_modules/
 
+
+# dist and dev folders
+dist/
