@@ -5,12 +5,6 @@ logs
 npm-debug.log*
 
 
-# Dependency directories
-node_modules/
-jspm_packages/
-
-
-
 # Optional npm cache directory
 .npm
 
@@ -20,5 +14,3 @@ jspm_packages/
 .parcel-cache
 
 
-# build / generate output
-dist
