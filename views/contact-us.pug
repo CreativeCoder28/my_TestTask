@@ -1,10 +1,26 @@
 extends layout
 block primary
   main
-     h1 Contact us
-     hr
-     p.
+    h1 Contact Us
+    hr
+    p.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
+
+    div.panel
+      .panel-heading  
+        .panel-title
+          h6 Contact Form
+      .panel-body
+         form(role='form' method='GET' action='https://www.google.com/')
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='name' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          button.btn.btn-primary(type="submit", name="asdf") Submit
+          button.btn.btn-default(type="button", data-dismiss="modal")
+                  | Close
