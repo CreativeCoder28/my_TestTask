@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index",
     "dev": "parcel views/layout.pug",
-    "build": "parcel views/layout.pug>"
+    "build": "parcel views/layout.pug"
   },
   "repository": {
     "type": "git",

@@ -3,6 +3,9 @@ const path = require('path');
 const PORT= 3000;
 
 
+const Bundler = require('parcel-bundler')
+const bundler = new Bundler(path.resolve(__dirname, 'views/layout.pug'))
+
 const router = express.Router();
 
 //Init App
