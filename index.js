@@ -8,8 +8,6 @@ const router = express.Router();
 //Init App
 const app =express();
 
-app.use(express.static(path.join(__dirname, 'public')));
-
 // Load view Pug Engine
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')))
