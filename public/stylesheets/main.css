@@ -153,6 +153,7 @@ a.hover {
   position: relative;  
   z-index: 8;
   overflow: hidden;
+  white-space: nowrap;
   background-color: var(--text-primary);
   border-right: solid 1px #666;
   -webkit-transition: all 0.1s ease-in-out;
@@ -177,6 +178,7 @@ a.hover {
 .sidebar-primary-menu li { 
   padding-top: 20px;
   list-style: none;
+  display: inline-block;
   color: var(--bg-primary);
 }
 
@@ -192,7 +194,7 @@ a.hover {
 
 i span{
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 15px;
  
 }
 
@@ -240,7 +242,7 @@ i span{
 }
 
 .body-wrapper.nav-min {
-  left: 200px;
+  left: 250px;
 }
 
 /* CUSTOMIZE THE CAROUSEL

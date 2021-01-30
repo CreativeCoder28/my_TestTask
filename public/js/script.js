@@ -6,7 +6,7 @@ let sideBarElement = document.querySelector('.sidebar-primary');
 // Adding event listner to collapse and expand the side bar
 collapseBtn.addEventListener('click', ()=>{
   if(isSideBarOpen == false){
-    sideBarElement.style.width = "200px";
+    sideBarElement.style.width = "160px";
     isSideBarOpen = true;
     console.log(isSideBarOpen);
   }
