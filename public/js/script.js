@@ -1,18 +1,18 @@
-$(".carousel").swipe({
+// defining the varibles for the side bar
+let isSideBarOpen = false;
+let collapseBtn = document.querySelector('.btn-expand-collapse');
+let sideBarElement = document.querySelector('.sidebar-primary');
 
-  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+// Adding event listner to collapse and expand the side bar
+collapseBtn.addEventListener('click', ()=>{
+  if(isSideBarOpen == false){
+    sideBarElement.style.width = "200px";
+    isSideBarOpen = true;
+    console.log(isSideBarOpen);
+  }
+  else if(isSideBarOpen == true){
+  sideBarElement.style.width = "60px";
+  isSideBarOpen = false;
+  }
+})
 
-    if (direction == 'left') $(this).carousel('next');
-    if (direction == 'right') $(this).carousel('prev');
-
-  },
-  allowPageScroll:"vertical"
-
-});
-
-
-$('.btn-expand-collapse').click(function(e) {
-  $('.navbar-primary').toggleClass('collapsed');
-$('.body-wrapper').toggleClass('nav-min');
-
-});
