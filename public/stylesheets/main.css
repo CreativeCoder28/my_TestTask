@@ -61,6 +61,7 @@ h6 {
   position: relative;
   width: 100%;
   z-index: 99;
+  padding: 10px;
   background-color: var(--bg-primary);
 }
 
@@ -88,12 +89,12 @@ aside {
 nav {
   width: 100%;
   color: var(--text-primary);
+  padding: 10px 0;
 }
 
 label.logo {
   color: var(--text-primary);
   font-size: 35px;
-  padding: 0 30px;
 }
 
 nav ul a {
@@ -101,8 +102,14 @@ nav ul a {
   color: var(--text-primary);
 }
 
-a.active,
-a.hover {
+.nav-header{ 
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.nav-header  ul a.active,
+.nav-header  ul a.hover {
   background: #bbbcbd;
   transition: .5s;
   color: orange;
